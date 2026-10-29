@@ -1,13 +1,13 @@
 <!doctype html>
 <html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Habbo Nick Checker</title><link rel="stylesheet" href="/static/style.css"></head>
-<body><main><header><span class="eyebrow">HABBO BR/PT</span><h1>Habbo Nick Checker</h1><p>Consulte vários nicknames na API pública do Habbo.</p></header>
-<section class="panel"><label for="nicks">Nicknames (um por linha ou separados por vírgula)</label>
+<body><main>
+<section class="panel"><label for="nicks">Nicknames</label>
 <textarea id="nicks" rows="7" placeholder="exemplo1&#10;gato&#10;vibe"></textarea>
-<div class="actions"><span id="count">0 / 100</span><button id="start">Verificar</button><button id="stop" disabled>Parar</button><button id="clear">Limpar</button></div>
+<div class="input-actions"><button id="clear">Limpar</button><button id="paste" type="button">Colar</button><button id="start">Verificar</button></div>
 <div class="track"><div id="bar"></div></div><p id="progress-label">Pronto para verificar.</p></section>
 <section class="panel"><div class="summary"><div><b id="total">0</b><small>Verificados</small></div><div><b id="found">0</b><small>Não encontrados</small></div><div><b id="occupied">0</b><small>Ocupados</small></div><div><b id="unknown">0</b><small>Inconclusivos</small></div></div>
 <div class="actions filters"><button class="filter active" data-filter="all">Todos</button><button class="filter" data-filter="not_found">Não encontrados</button><button class="filter" data-filter="occupied">Ocupados</button><button class="filter" data-filter="other">Outros</button></div>
 <div class="table-wrap"><table><thead><tr><th>Nickname</th><th>Status</th><th>Detalhes</th></tr></thead><tbody id="results"></tbody></table></div></section>
 <section class="panel"><h2>Possivelmente disponíveis <span id="saved-count">(0)</span></h2><p>Salvos neste navegador. Nomes ocupados ou inconclusivos não entram na lista.</p><p id="storage-warning" hidden role="alert"></p><div class="actions"><button id="export" disabled>Exportar lista CSV</button><button id="remove-saved">Limpar lista salva</button></div><div class="table-wrap"><table><thead><tr><th>Nickname</th><th>Ação</th></tr></thead><tbody id="saved-results"></tbody></table></div></section>
-<footer>404 não garante que o nome esteja disponível para registro. Respeite os limites e regras do Habbo.</footer></main><script src="/static/app.js"></script></body></html>
+</main><script src="/static/app.js"></script></body></html>
